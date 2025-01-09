@@ -136,6 +136,16 @@ h2 {
 #contact .table-dark * {
     background-color: transparent;
 }
+#events .discount {
+    background-color: var(--highlight-color); /* Blue background color */
+    color: white; /* White text color */
+    padding: 0.3rem 1rem; /* Add some padding */ 
+    width: fit-content;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+}
+
 /* grid visualisation CSS for testing */
 
 /*.container,
@@ -180,3 +190,75 @@ h2 {
         min-height: 195px;
     }
 }
+/* Media queries for Events Section */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    #events .col-12 {
+      /* Adjust column spacing for portrait phones */
+      margin-bottom: 1rem;
+    }
+  
+    #events .table,
+    #events .discount
+    {
+      /* Adjust table font size for better readability */
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    #events .table td {
+        width: 25%; /* Adjust as needed */
+      }
+    #events .col-md-6 {
+      /* Adjust column spacing for tablets */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    #events .table td:nth-child(3) {
+        width: 25%; /* Adjust as needed */
+  }
+}
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+    #events .table td:nth-child(3) {
+        width: 15%; /* Adjust as needed */
+      }
+    #events .col-xl-4 {
+      /* Adjust column spacing for large desktops */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Extra extra large devices (extra large desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+    #events .table td:nth-child(3) {
+        width: 25%; /* Adjust as needed */
+      }
+  }
